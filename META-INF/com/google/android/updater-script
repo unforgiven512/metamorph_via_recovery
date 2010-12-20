@@ -1,0 +1,6 @@
+ui_print("---         RECOVERY-BASED METAMORPH         ---");
+ui_print(" We are going to attempt to apply your theme... ");
+package_extract_file("scripts/startupcheck.sh", "/tmp/metamorph/startupcheck.sh");
+package_extract_dir("tools", "/tmp/metamorph/tools");
+package_extract_dir("theme", "/tmp/metamorph");
+

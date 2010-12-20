@@ -1,0 +1,16 @@
+./
+./META-INF
+./META-INF/com
+./META-INF/com/google
+./META-INF/com/google/android
+-- update-binary
+-- updater-script
+./scripts
+-- startupcheck.sh
+-- applymorph.sh
+./tools
+-- zip
+-- zipalign
+-- unzip
+./theme
+-- your_metamorph.zip
