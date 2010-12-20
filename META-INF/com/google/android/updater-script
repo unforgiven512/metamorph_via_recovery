@@ -1,6 +1,16 @@
 ui_print("---         RECOVERY-BASED METAMORPH         ---");
-ui_print(" We are going to attempt to apply your theme... ");
+ui_print("We are going to attempt to apply your theme...");
 package_extract_file("scripts/startupcheck.sh", "/tmp/metamorph/startupcheck.sh");
+package_extract_file("scripts/applymorph.sh");
 package_extract_dir("tools", "/tmp/metamorph/tools");
 package_extract_dir("theme", "/tmp/metamorph");
-
+ui_print("Checking to make sure we have what we need...");
+assert(run_program("/tmp/metamorph/startupcheck.sh") == "0");
+ui_print("OK! We're good to go!");
+ui_print("Let's apply your theme!");
+mount("MTD", "system", "/system");
+mount("MTD", "sdcard", "/sdcard");
+run_program("/tmp/metamorph/applymorph.sh");
+ui_print("---          INSTALLATION COMPLETE!          ---");
+unmount("/system");
+unmount("/sdcard");
