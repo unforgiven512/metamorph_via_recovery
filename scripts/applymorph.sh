@@ -1,5 +1,3 @@
-#!/bin/sh
+#!/sbin/sh
 
-touch /tmp/test
-touch /system/test
-touch /sdcard/test
+echo "`date -u +%H:%M:%S` -- Applying theme!" >> /tmp/metamorph.log

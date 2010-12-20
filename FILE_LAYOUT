@@ -1,16 +1,17 @@
-./
-./META-INF
-./META-INF/com
-./META-INF/com/google
-./META-INF/com/google/android
--- update-binary
--- updater-script
-./scripts
--- startupcheck.sh
--- applymorph.sh
-./tools
--- zip
--- zipalign
--- unzip
-./theme
--- your_metamorph.zip
+d /
+f   FILE_LAYOUT
+f   README
+d /META-INF/
+d /META-INF/com/
+d /META-INF/com/google/
+d /META-INF/com/google/android/
+f   update-binary
+f   updater-script
+d /scripts/
+f   startupcheck.sh
+f   applymorph.sh
+d /theme/
+f   replace_with_your_theme.zip
+d /tools/
+f   zip
+f   zipalign

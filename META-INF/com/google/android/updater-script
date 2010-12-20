@@ -6,6 +6,8 @@ package_extract_dir("theme", "/tmp/metamorph/theme");
 set_perm(0, 0, 0777, "/tmp/metamorph/scripts/startupcheck.sh");
 set_perm(0, 0, 0777, "/tmp/metamorph/scripts/applymorph.sh");
 ui_print("Checking to make sure we have what we need...");
+ui_print("* For a detailed log of what we're doing here,");
+ui_print("* connect via adb and look in /tmp/metamorph.log");
 assert(run_program("/tmp/metamorph/scripts/startupcheck.sh") == "0");
 ui_print("OK! We're good to go!");
 ui_print("Let's apply your theme!");
