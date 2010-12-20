@@ -1,3 +1,3 @@
 #!/bin/sh
 
-return 0;
+return true;

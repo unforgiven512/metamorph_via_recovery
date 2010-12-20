@@ -5,7 +5,7 @@ package_extract_file("scripts/applymorph.sh");
 package_extract_dir("tools", "/tmp/metamorph/tools");
 package_extract_dir("theme", "/tmp/metamorph");
 ui_print("Checking to make sure we have what we need...");
-assert(run_program("/tmp/metamorph/startupcheck.sh") == "0");
+assert(run_program("/tmp/metamorph/startupcheck.sh"));
 ui_print("OK! We're good to go!");
 ui_print("Let's apply your theme!");
 mount("MTD", "system", "/system");
