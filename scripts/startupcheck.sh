@@ -2,6 +2,11 @@
 
 MMREC_LOG=/sdcard/mmrec/mmrec.log
 
+if [[ ! -d "/sdcard/mmrec/" ]]
+then
+	mkdir -p "/sdcard/mmrec/"
+fi
+
 touch $MMREC_LOG
 echo "--------------------------------------------------------------------------------" >> $MMREC_LOG
 echo "METAMORPH VIA RECOVERY" >> $MMREC_LOG
